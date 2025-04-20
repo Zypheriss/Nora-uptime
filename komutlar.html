@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komutlar | Nora Uptime Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/commands.css">
+</head>
+<body>
+    <div class="snowfall"></div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="https://media.discordapp.net/attachments/1353733473080311818/1363167213447544894/norauptime.png?ex=68050be6&is=6803ba66&hm=ca7d0f7619246b067f5f9cbeb79b0c235909e673cd3c75e9cf5585b6500cbbca&=&format=webp&quality=lossless&width=550&height=310" alt="Nora Uptime Bot Logo">
+                <span>Nora Uptime</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li class="active"><a href="komutlar.html">Komutlar</a></li>
+                <li><a href="takim.html">Takım</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Komutlar</h1>
+            <p>Nora Uptime Bot'un tüm komutları ve nasıl kullanacağınıza dair bilgiler</p>
+        </div>
+    </header>
+
+    <section class="commands-section">
+        <div class="container">
+            <div class="command-categories">
+                <button class="category-btn active" data-category="all">Tüm Komutlar</button>
+                <button class="category-btn" data-category="user">Kullanıcı Komutları</button>
+                <button class="category-btn" data-category="uptime">Uptime Komutları</button>
+            </div>
+            
+            <div class="commands-list">
+                <div class="command-card" data-command="yardım">
+                    <div class="command-name">/yardım</div>
+                    <div class="command-short-desc">Tüm komutları görüntüleyin</div>
+                </div>
+                <div class="command-card" data-command="ping">
+                    <div class="command-name">/ping</div>
+                    <div class="command-short-desc">Bot gecikme süresini görün</div>
+                </div>
+                <div class="command-card" data-command="bilgi">
+                    <div class="command-name">/bilgi</div>
+                    <div class="command-short-desc">Bot hakkında bilgi alın</div>
+                </div>
+                <div class="command-card" data-command="davet">
+                    <div class="command-name">/davet</div>
+                    <div class="command-short-desc">Bot davet linklerini alın</div>
+                </div>
+                <div class="command-card" data-command="ekle">
+                    <div class="command-name">/ekle</div>
+                    <div class="command-short-desc">Proje ekleyin</div>
+                </div>
+                <div class="command-card" data-command="sil">
+                    <div class="command-name">/sil</div>
+                    <div class="command-short-desc">Projeyi kaldırın</div>
+                </div>
+                <div class="command-card" data-command="listele">
+                    <div class="command-name">/listele</div>
+                    <div class="command-short-desc">Projelerinizi listeleyin</div>
+                </div>
+                <div class="command-card" data-command="bakım">
+                    <div class="command-name">/bakım</div>
+                    <div class="command-short-desc">Bakım durumunu kontrol edin</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="command-modal" id="commandModal">
+        <div class="command-modal-content">
+            <div class="command-modal-header">
+                <h2 id="modalCommandName"></h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="command-modal-body">
+                <div class="command-description" id="modalCommandDesc"></div>
+                <div class="command-usage">
+                    <h3>Kullanım</h3>
+                    <pre id="modalCommandUsage"></pre>
+                </div>
+                <div class="command-examples">
+                    <h3>Örnekler</h3>
+                    <div id="modalCommandExamples"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://media.discordapp.net/attachments/1353733473080311818/1363167213447544894/norauptime.png?ex=68050be6&is=6803ba66&hm=ca7d0f7619246b067f5f9cbeb79b0c235909e673cd3c75e9cf5585b6500cbbca&=&format=webp&quality=lossless&width=550&height=310" alt="Nora Uptime Bot Logo">
+                    <span>Nora Uptime</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Sayfalar</h4>
+                        <ul>
+                            <li><a href="index.html">Ana Sayfa</a></li>
+                            <li><a href="komutlar.html">Komutlar</a></li>
+                            <li><a href="takim.html">Takım</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Bağlantılar</h4>
+                        <ul>
+                            <li><a href="https://discord.gg/YOUR_INVITE">Discord</a></li>
+                            <li><a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot%20applications.commands">Botu Ekle</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nora Uptime Bot. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/snowfall.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/commands.js"></script>
+</body>
+</html>
